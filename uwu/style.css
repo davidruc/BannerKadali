@@ -1,0 +1,245 @@
+.navar{
+    margin: 3% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 220px;
+}
+
+
+
+
+@media (max-width: 2900px){
+    .botonesNavar{
+        display: flex;
+        width: 100%;
+        justify-content: end;
+        gap: 10px;
+        
+    }
+    .buttonNav{
+        
+        width: 120px;
+        border: none;
+        height: 60px;
+        font-size: 1.3em;   
+        background-color: lightpink;
+    }
+    .buttonNav1{
+        
+        width: 120px;
+        border: none;
+        height: 60px;  
+        font-size: 1.3em; 
+        background-color: lightpink;   
+    }
+    .buttonNav2{
+        
+        width: 120px;
+        border: none;
+        height: 60px;   
+        font-size: 1.3em; 
+        background-color: lightpink;  
+    }
+}
+
+
+@media (max-width: 1100px){
+    .botonesNavar{
+        display: none;
+    }
+}
+
+@media (max-width: 2900px){
+.conteiner{
+    margin: 0 5%;
+    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+}
+
+@media (max-width: 1100px){
+    .conteiner{
+        margin: 0 5%;
+        display: flex;
+        flex-direction: column;
+    
+}
+
+.cuadroderecha{
+        margin-top: 2%;
+}
+}
+.cuadroizq{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (max-width: 1100px){
+    .imagencentral{
+        width: 90%;
+        height: 90%;
+    }
+}
+
+@media (max-width: 2100px){
+    .cuadroizq{
+        display: flex;
+        align-items: center;
+    }
+    .imagencentral{
+        width: 90%;
+        height: 90%;
+    }
+}
+
+
+
+.cuadroderecha{
+    display: flex;
+    flex-direction: column;
+}
+
+.textosup{
+    display: flex;
+    justify-content: center;
+    border: 3px solid lightpink;
+}
+.tabla{
+    margin: 4% 0;
+    background-color: rgba(238, 130, 238, 0.171);
+    height: 65%;
+    overflow-x: scroll;
+}
+.text{
+    padding: 2%;
+    font-size: 2em;
+}
+
+
+
+.boton{
+    width: 120px;
+    border: none;
+    height: 60px;   
+    font-size: 1.3em; 
+    background-color: lightpink; 
+    
+}
+
+
+
+
+.redesyboton{
+    display: flex;
+    justify-content: space-between;
+}
+.redes{
+    width: 60%;
+    display: flex;
+    gap: 40px;
+    margin-left: 5%;
+}
+.bt1{
+    display: flex;
+    margin-top: 3%;
+    justify-content: end;
+    width: 40%;
+    margin-right: 5%;
+}
+
+.iconos{
+    fill: black;
+    width: 40px;
+}
+
+
+@media (max-width: 2100px){
+.footer{
+    display: flex;
+    margin: 1% 8%;
+    border: 3px solid lightpink;
+    align-content: space-around;
+    height: 100px;
+}
+
+.copyray{
+    display: flex;
+    align-items: center;
+    width: 20%;
+    padding-left: 4%;
+}
+
+.iconos2{
+    fill: lightpink;
+    width: 30px;
+    
+}
+.redes{
+    width: 50%;
+    display: flex;
+    margin:unset;
+    justify-content: center;
+}
+
+.menucontendor{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8em;
+    justify-content: center;
+}
+
+.menu{
+    margin:unset;
+}
+}
+
+@media (max-width: 1100px){
+    .footer{
+        display: flex;
+        justify-content: column;
+        margin: 1% 8%;
+        border: 3px solid lightpink;
+        align-content: space-around;
+        height: 100px;
+    }
+    
+    .copyray{
+        display: flex;
+        
+        align-items: center;
+        width: 20%;
+        padding-left: 4%;
+    }
+    
+    .iconos2{
+        fill: lightpink;
+        width: 30px;
+        
+    }
+    .redes{
+        width: 50%;
+        display: flex;
+        margin:unset;
+        justify-content: center;
+    }
+    
+    .menucontendor{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        font-size: 0.8em;
+        justify-content: center;
+    }
+    
+    .menu{
+        margin:unset;
+    }
+    }

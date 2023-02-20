@@ -1,0 +1,91 @@
+:root{
+    --color-brand: #fff;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./paisaje.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.nav-left, .nav-right, li{
+    position: relative;
+    display: inline;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+}
+.nav-left{
+    padding-left: 10rem;
+}
+section{
+    display: flex;
+    justify-content: center;
+    height: 700px;
+}
+
+section article{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    text-align: justify;
+}
+
+article h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    margin: 50px;
+    border-radius: 5px;
+    background-color: var(--color-brand);
+}
+
+button:hover{
+    box-shadow: 5px 5px 5px #00000027;
+    cursor: pointer;
+    background-color:  #f39c12;
+    color: #fff;
+}
+
+@media (max-width: 800px){
+    nav{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-left{
+        padding-left: 0;
+    }
+    
+    .nav-left, .nav-right, li{
+        display: flex;
+        flex-wrap: wrap;
+        border: none;
+        cursor: pointer;
+        padding: 20px 0;
+    }
+    ul li{
+        display: flex;
+        justify-content: center;
+    }
+}

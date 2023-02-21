@@ -1,3 +1,7 @@
+*{
+    margin: unset;
+    padding: unset;
+}
 .navar{
     margin: 3% 10%;
     display: flex;
@@ -8,9 +12,13 @@
 .logo{
     width: 220px;
 }
+nav .botonesNavar li{
+    list-style: none;
+} 
 
-
-
+#nav-toggle{
+    display: none;
+}
 
 @media (max-width: 2900px){
     .botonesNavar{
@@ -18,21 +26,28 @@
         width: 100%;
         justify-content: end;
         gap: 10px;
+        height: 60px;
+        align-items: center;
+        
         
     }
-    .buttonNav{
-        
-        width: 120px;
-        border: none;
+    li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 130px;
         height: 60px;
-        font-size: 1.3em;   
         background-color: lightpink;
     }
-    .buttonNav1{
-        
-        width: 120px;
+    .buttonNav{
+     
         border: none;
-        height: 60px;  
+        font-size: 1.3em;   
+       
+    }
+    .buttonNav1{
+
+        border: none;
         font-size: 1.3em; 
         background-color: lightpink;   
     }
@@ -46,10 +61,61 @@
     }
 }
 
-
+#line{
+    display: none;
+    width: 50px;
+    fill: lightpink;
+}
 @media (max-width: 1100px){
+
+
+    #nav-toggle{
+        position: absolute;
+    }
+    
+    #line{
+        display: block;
+        cursor: pointer;
+    }
+
     .botonesNavar{
-        display: none;
+        position: fixed;
+        
+        z-index: 10;
+        float: none;
+        width: 95%;
+        top: 17%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        left: 2%;
+        padding: unset;
+        gap: 0;
+    }
+
+    nav .botonesNavar li{
+        visibility: collapse;
+
+    }
+    li{
+        height: 20%;
+        width: 100%;
+        left: 0;
+        background-color: rgba(255, 182, 193, 0.514);
+        
+    }
+    li:hover {
+        background-color: rgba(255, 192, 203, 0.781);
+    }
+    nav .icon-burger{
+        display: block;
+    }
+  
+
+    #line :checked ~ * nav .botonesNavar li {
+        visibility: visible;
+        background-color: blue;   
     }
 }
 
@@ -61,6 +127,7 @@
     grid-template-columns: 50% 50%;
 
 }
+    
 }
 
 @media (max-width: 1100px){
@@ -85,6 +152,7 @@
     .imagencentral{
         width: 90%;
         height: 90%;
+    
     }
 }
 
@@ -200,43 +268,76 @@
     margin:unset;
 }
 }
+.boton{
+    cursor: pointer;
+}
 
+
+@media (max-width: 1500px) {
+    .imagencentral{
+       
+        width: 95%;
+        height: 60%;
+    
+    }
+   
+    
+}
 @media (max-width: 1100px){
+
+
     .footer{
         display: flex;
-        justify-content: column;
-        margin: 1% 8%;
-        border: 3px solid lightpink;
-        align-content: space-around;
-        height: 100px;
-    }
-    
-    .copyray{
-        display: flex;
-        
+        flex-direction: column;
+        height: 100%;
         align-items: center;
-        width: 20%;
-        padding-left: 4%;
+        justify-content: space-around;
+        
+    }    
+    .copyray{
+       
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100px;
+     
     }
-    
+    .redesyboton{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bt1{
+        display: flex;
+        justify-content: center;
+        margin:0 0 3%
+    }
     .iconos2{
         fill: lightpink;
-        width: 30px;
+        width:50px;
         
     }
     .redes{
-        width: 50%;
+        width: 100%;
         display: flex;
-        margin:unset;
+        margin: 0% 0% 3%;
         justify-content: center;
+
     }
-    
+    .menu{
+        font-size: 1.5em;
+        padding-bottom: 2%;
+    }
+    li{font-size: 1.2em;}
     .menucontendor{
-        width: 30%;
+        margin-bottom: 3%;
+        width: 60%;
         display: flex;
+
         flex-direction: column;
         font-size: 0.8em;
         justify-content: center;
+        align-items: center;
     }
     
     .menu{

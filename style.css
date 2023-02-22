@@ -41,28 +41,29 @@ nav .botonesNavar li{
     cursor: pointer;
 }
 
-@media (max-width: 2900px){
-
-
-    .buttonNav{
-        border: none;
-        font-size: 1.3em;    
-    }
-    .buttonNav1{
-
-        border: none;
-        font-size: 1.3em; 
-        background-color: lightpink;   
-    }
-    .buttonNav2{
-        
-        width: 120px;
-        border: none;
-        height: 60px;   
-        font-size: 1.3em; 
-        background-color: lightpink;  
-    }
+.botonesNavar{
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+    gap: 1rem;
 }
+
+li{
+
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: lightpink;
+}
+
+li:hover{
+    background-color: rgb(252, 145, 161);
+}
+a{
+    color: black;
+    text-decoration:none;
+    
+}
+
 @media (max-width: 1100px){
 
 
@@ -74,23 +75,31 @@ nav .botonesNavar li{
         display: block;
         cursor: pointer;
     }
-    .botonesNavar{
-        position: fixed;
-        background: red;
-        top: 9.5rem;
+    .botonesNavar {
+        position: absolute;
+      
+        top: 10.8%;
         text-align: center;
         left: 0;
         z-index: 10;
         width: 100%;
-        height: 50vh;
-        /* display: flex;
+        height: 20%;
+        gap: 0;
+        display: flex;
         flex-direction: column;
-        justify-content: space-around; */
+        justify-content: start;
+
+        
+    
     }
     .botonesNavar li{
+        background-color: rgba(255, 192, 203, 0.781);
         display: flex;
         justify-content: center;
-        padding: 20px 0;
+        align-items: center;
+        padding: 27px 0;
+        visibility: collapse;
+   
     }
     .buttonNav{
         display: flex;
@@ -101,7 +110,7 @@ nav .botonesNavar li{
     
     }
     li:hover {
-        background-color: rgba(255, 192, 203, 0.781);
+        background-color: rgb(252, 145, 161);
     }
     nav .icon-burger{
         display: block;
@@ -250,9 +259,16 @@ nav .botonesNavar li{
     font-size: 0.8em;
     justify-content: center;
 }
-
+.rarito{
+    list-style: none;
+    margin-right: 8%;
+    align-self: center;
+}
 .menu{
-    margin:unset;
+    
+    align-self: center;
+    margin:0 0 2%;
+    font-size: 1rem;
 }
 }
 @media (max-width: 1500px) {
